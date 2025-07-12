@@ -15,7 +15,7 @@
 > Our paper has been accepted to **[ACM International Conference on Multimedia (ACMMM)]**.
 
 <p align="center">
-  <img src="[此处放置你项目中最核心的图示，例如模型架构图].png" alt="项目核心图示" width="700"/>
+  <img src="AIGC_banckmark.png" alt="项目核心图示" width="700"/>
 </p>
 <!-- 
     说明：
