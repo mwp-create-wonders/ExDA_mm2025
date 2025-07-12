@@ -1,5 +1,6 @@
 # 🚀 [ExDA: Towards Universal Detection and Plug-and-Play Attribution of AI-Generated Ex-Regulatory Images]
-🚀 We will organize the remaining code and update it as soon as possible...
+
+<i>🚀 We will organize the remaining code and update it as soon as possible...</i>
 
 [![Conference](https://img.shields.io/badge/会议简称-年份-blue.svg)](你的会议链接)
 [![arXiv](https://img.shields.io/badge/arXiv-论文ID-b31b1b.svg)](你的arXiv链接)
