@@ -15,7 +15,10 @@
 > Our paper has been accepted to **[ACM International Conference on Multimedia (ACMMM)]**.
 
 <p align="center">
-  <img src="AIGC_banckmark.png" alt="项目核心图示" width="700"/>
+  <img src="framework.jpg" alt="Figure 3: Our Framework Overview: Input images are divided into patches using CLIP. The patches undergo feature extraction
+through a frozen ViT and are processed by the SFS-ResNet module, resulting in highly discriminative visual features. Meanwhile, the
+patches are processed through a text encoder that incorporates a built-in text feature reduction layer and remains frozen, resulting in
+the extraction of consistent semantic features. Finally, they are concatenated and fed into the detection and attribution module." width="700"/>
 </p>
 <!-- 
     说明：
