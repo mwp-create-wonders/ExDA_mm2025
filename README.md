@@ -2,7 +2,7 @@
 
 [![Conference](https://img.shields.io/badge/会议简称-年份-blue.svg)](你的会议链接)
 [![arXiv](https://img.shields.io/badge/arXiv-论文ID-b31b1b.svg)](你的arXiv链接)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 <!-- 
     说明：
     - 上面的徽章（Badges）可以提升专业感。请将 "会议简称"、"年份"、"论文ID" 和对应的链接替换成你自己的信息。
@@ -10,8 +10,6 @@
     - License可以根据你的项目选择，例如 MIT, Apache 2.0 等。
 -->
 
-> 我们的论文已被 **[ACM International Conference on Multimedia (ACMMM)]** 接收。
->
 > Our paper has been accepted to **[ACM International Conference on Multimedia (ACMMM)]**.
 
 <p align="center">
@@ -23,22 +21,26 @@ patches are processed through a text encoder that incorporates a built-in text f
 the extraction of consistent semantic features. Finally, they are concatenated and fed into the detection and attribution module. </i>
  </p>
 
-## 📝 摘要 (Abstract)
-> 在这里粘贴你的**英文**或**中文**摘要。使用引用块可以让这部分内容更突出，易于阅读。
->
-> Paste your abstract here. Using a blockquote makes it stand out.
+## 📝 Abstract
+> As image-generative AI models become increasingly accessible to the public, the demand for content safety has surged. Although model developers have introduced alignment mechanisms to prevent the creation of threatening images, and extensive researches have been conducted on verifying the authenticity of AI-generated images, a significant number of ex-regulatory images have been discovered that fall into regulatory gaps. These images are neither covered by existing alignment mechanisms nor included in the scope of current detection methods. To address this, we introduce ExDA, a detection and attribution framework specifically designed for such ex-regulatory images. ExDA utilizes a frozen CLIP:ViT-L/14 as a visual feature extractor to extract rich and unbiased visual features, complemented by a text feature reduction layer to unify semantic styles. For obtaining highly discriminative features, ExDA introduces an SFS-ResNet network, where each basic layer is replaced with a meticulously designed Multi-Channel Margin Convolution (MMConv). Additionally, a plug-and-play multi-generation model attributor is integrated behind the detector. Given the lack of ex-regulatory images in existing public datasets, we constructed ExImage, a dataset containing 72,000 ex-regulatory images, to validate ExDA's effectiveness. Experiments show that ExDA achieves an average detection accuracy of 99.07\% on ExImage, and demonstrating significant performance improvements of +5.73\% and +10.36\% on GenImage and high-challenge Chameleon datasets respectively in cross-datasets evaluation. Notably, ExDA also achieves excellent performance in attribution tasks, demonstrating its superior ability to identify the intrinsic fingerprints of generative models. Our code is publicly available on the author's homepage.
 
 <br>
 
-## ✨ 主要贡献 (Main Contributions)
-我们工作的主要贡献可以总结为以下几点：
-*   **[贡献点一]**: [对贡献点一的简要说明，例如：我们提出了一个全新的XX模型，它能有效地解决XX问题。]
-*   **[贡献点二]**: [对贡献点二的简要说明，例如：我们构建了一个大规模的XX数据集，并会公开发布以促进社区研究。]
-*   **[贡献点三]**: [对贡献点三的简要说明，例如：大量的实验证明我们的方法在多个基准测试中取得了SOTA（State-of-the-Art）的结果。]
+## ✨ Main Contributions
+Our contributions of this paper can be outlined as follows:
+
+*   **(1)**: We develop an efficient framework ExDA for AI-generated ex-regulatory images detection and attribution. ExDA incorporates frozen CLIP:ViT-L/14 as visual feature extraction module to extract unbiased and robust visual features. To effectively process these diverse and complex visual features, a specialized feature processing network called SFS-ResNet is proposed. This network replaces every foundational layer with MMConv, which not only effectively filters out redundant information but also obtains high-frequency and discriminative feature representations.
+
+*   **(2)**: ExDA decouples the frozen text encoder from CLIP:ViT-L/14 and introduces a text feature reduction layer before its multi-head attention. This design aims to minimize the impact of specific image content on the detection process.
+
+*   **(3)**: ExDA also features a plug-and-play and highly extendable attribution plugin, which requires only a small number of unseen generated model images to memorize underlying fingerprint features, resolving accountability issues in real-world scenarios.
+
+*   **(4)**: The ExImage dataset is developed for the detection of ex-regulatory images. Such ex-regulatory images have received minimal research attention, yet they are crucial for social stability and national security.
+
 
 <br>
 
-## 🛠️ 环境设置 (Setup)
+## 🛠️ Setup
 
 1.  **克隆本仓库**
     ```bash
