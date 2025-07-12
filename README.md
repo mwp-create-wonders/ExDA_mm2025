@@ -15,19 +15,13 @@
 > Our paper has been accepted to **[ACM International Conference on Multimedia (ACMMM)]**.
 
 <p align="center">
-  <img src="framework.jpg" alt="Figure 3: Our Framework Overview: Input images are divided into patches using CLIP. The patches undergo feature extraction
+  <img src="framework.jpg" alt="framework" width="700"/>
+    
+<i> Figure 3: Our Framework Overview: Input images are divided into patches using CLIP. The patches undergo feature extraction
 through a frozen ViT and are processed by the SFS-ResNet module, resulting in highly discriminative visual features. Meanwhile, the
 patches are processed through a text encoder that incorporates a built-in text feature reduction layer and remains frozen, resulting in
-the extraction of consistent semantic features. Finally, they are concatenated and fed into the detection and attribution module." width="700"/>
-</p>
-<!-- 
-    说明：
-    - 在项目根目录创建一个文件夹（如 `assets` 或 `figs`），将你的核心图（架构图、效果图等）放进去。
-    - 然后将上面的 `[...].png` 路径替换为你的图片路径，例如 `assets/architecture.png`。
-    - 一张好的图示能让别人快速了解你的工作。
--->
-
----
+the extraction of consistent semantic features. Finally, they are concatenated and fed into the detection and attribution module. </i>
+ </p>
 
 ## 📝 摘要 (Abstract)
 > 在这里粘贴你的**英文**或**中文**摘要。使用引用块可以让这部分内容更突出，易于阅读。
