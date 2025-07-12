@@ -10,7 +10,7 @@
     - License可以根据你的项目选择，例如 MIT, Apache 2.0 等。
 -->
 
-> Our paper has been accepted to **[ACM International Conference on Multimedia (ACMMM)]**.
+> Our paper has been accepted to **[The 33rd ACM International Conference on Multimedia (MM'25)]**.
 
 <p align="center">
   <img src="framework.jpg" alt="framework" width="700"/>
